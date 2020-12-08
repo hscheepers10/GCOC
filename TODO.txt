@@ -1,0 +1,73 @@
+=====SEGMENTS=====
+1.  Base.  
+    -read temperature.  
+    -read humidity.  
+    -display hunmid and temp in LCD.  
+    
+1.1 Base DLC1.  
+    -read temp and humid in 5 min increments until program is terminated.  (Add loop)
+    -update LCD every 5 min after temp and humid is read.  (Loop)
+    -check and trigger flags.   (Decide whether to sound alert or send email.)
+        -temp to high flag.  
+        -temp to low flag.  
+        -loss of power flag. 
+
+1.2 Base DLC2.  
+    -Add user conditional statements.  (If statements )
+        - if moist >= 30 % 
+            open flaps for 10 min.  
+        - if heat >= 70 
+            turn off blower for 1 hour.  
+
+1.3 Base end.  
+    -LCD "Start program ?" on rpi start up.  
+    -execute program at the push of a button.  
+    -terminate program at the push of a button.  
+    -loss of power flag send email.  
+
+
+
+2. Database / Logs.  
+    -add data from each 5 min increment to database.  ?
+    -add data to JSON .  ?
+    -create graph.  ?
+    -send JSON via email to server ?
+
+2.1 Server.  
+    -Host server to accomadate DB.  
+    -email sending service to:
+        -send alert emails.  
+        -receive data logs.  
+
+
+
+3. Website.  
+    -TBA.  
+
+
+
+
+
+
+=====LEARN=====
++ Learn to set the LCD display to "Start program ?" on rpi start up.  
++ Learn how to start a program with the push of a button rpi.  https://www.raspberrypi.org/forums/viewtopic.php?t=102538
++ Learn how to create an on off switch for rpi.  
+
+
+
+
+
+
+
+=====CHOOSE=====
+-whether to save logs as json,textfile or whatever OR save directly to DB.  
+
+
+
+
+
+=====TODO======
+=Make regular backups.  
+=diagrams.  
+    =Use case Diagram.  

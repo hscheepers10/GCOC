@@ -1,0 +1,14 @@
+ DHT sensor for python with circuitPython tutorial.  
+https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup
+
+LCD.  
+https://learn.adafruit.com/trinket-temperature-humidity-lcd-display
+
+Backup and restore SD Card using win32DiskManager.  
+https://raspberrypihq.com/how-to-backup-your-raspberry-pi/
+
+Access pi through laptop (SSH)
+https://maker.pro/raspberry-pi/projects/how-to-connect-a-raspberry-pi-to-a-laptop-display
+
+dht22 Git
+https://github.com/adafruit/Adafruit_CircuitPython_DHT/blob/master/examples/dht_simpletest.py
